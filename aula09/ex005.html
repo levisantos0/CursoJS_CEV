@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id ="msg" name = "msg1" class="mssg">Clique em mim</div>
+    <Script>
+        // --------Escrever dentro do Documento--------------//
+        //window.document.write('Ola mundo')
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)
+
+        //-----------------------------------------//
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        //window.document.write('Está escrito assim: '+p1.innerText)
+        //corpo.style.background = 'brown'
+        //p1.style.color = 'blue'
+        //window.alert(p1.innerHTML)
+        //window.alert(p1.innerText)
+        document.write(p1.innerHTML)
+
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //d.innerText = 'Estou aguardando......'
+        //window.document.getElementById('msg').innerText = 'Olá!'
+
+        //var d1 = window.document.getElementsByName('msg1')[0]
+        //d1.innerText = 'eaeee'
+
+        var d2 = window.document.querySelector('div.mssg')
+        d.style.color = 'blue'
+
+    </Script>
+</body>
+</html>
